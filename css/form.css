@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+form { 
+	margin-top : 20px; 
+	}
+	
+input[type=checkbox] {
+	display : none !important;
+	}
+	
+span.checkbox {
+	display : block;
+	position : absolute;
+	top : 20px;
+	left : 0;
+	z-index : 1;
+	width : 24px;
+	height : 24px;
+	border : 2px solid rgba(243, 243, 243, 1);
+	border-radius : 4px;
+	cursor : pointer;
+	}
+	
+span.checkbox.checked::before {
+	position : absolute;
+	content : "";
+	top : 5px;
+	left : 5px;
+	z-index : 20;
+	width : 8px;
+	height : 4px;
+	border-left : solid 2px rgba(254, 96, 129, 1);
+	border-bottom : solid 2px rgba(254, 96, 129, 1);
+	content : "";
+	transform : rotate(-45deg);
+	}
+
+form > div {
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : space-between;
+	margin : 0 auto;
+	}
+
+form > div,	
+form > div > div,
+form > div > div > ul > li,
+form > div > div > ul > li > input[type=text],
+form > div > div > textarea {
+	position : relative;
+	}
+	
+form > div > div:last-child {
+	padding : 20px 0 0 40px;
+	font : normal 18px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+	
+form > div > div > ul > li.required::after {
+	display : block;
+	position : absolute;
+	top : 0;
+	right : 0;
+	z-index : 3;
+	height : 60px;
+	padding : 0 10px 0 20px;
+	background-color : rgba(255, 255, 255, 1);
+	color : rgba(252, 71, 110, 1);
+	font : normal 20px/60px Arial, Tahoma, Verdana, sans-serif;
+	content : "\273b";
+	}
+
+form > div > div > ul > li > input[type=text],
+form > div > div > textarea {
+	z-index : 2;
+	display : block;
+	width : 100%;
+	font: normal 18px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	background-color : rgba(255, 255, 255, 0.75);
+	}
+	
+form > div > div > ul > li > input[type=text] {
+	padding : 18px 12px;
+	border-top : 0;
+	border-right : 0;
+	border-bottom : 2px solid rgba(243, 243, 243, 1);
+	border-left : 0;
+	}
+	
+form > div > div > ul > li > input.error {
+	border-bottom : 2px solid rgba(252, 71, 110, 1);
+	}
+
+form > div > div > ul > li > input.success {
+	border-bottom : 2px solid rgba(0, 255, 0, 1);
+	}
+	
+form > div > div > textarea {
+	height : 100%;
+	min-height : 180px;
+	padding : 16px 10px;
+	border : 2px solid rgba(243, 243, 243, 1);
+	resize : none;
+	}
+	
+form > div > div > ul > li > input[type=text] + span,
+form > div > div > textarea + span {
+	display : block;
+	position : absolute;
+	top : 20px;
+	left : 12px;
+	z-index : 1;
+	color : rgba(0, 0, 0, 1);
+	transform : scale(1, 1);
+	transition : all 0.25s;
+	font: normal 18px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+
+form > div > div > ul > li > input[type=text]:focus + span,
+form > div > div > ul > li > input[type=text] + span.selected,
+form > div > div > textarea:focus + span,
+form > div > div > textarea + span.selected { 
+	transform : scale(0,0); 
+	}
+	
+form > button {
+	display : block;
+	padding : 0 30px;
+	margin : 30px auto;
+	border : 0;
+	border-radius : 5px;
+	background-color : rgba(243, 243, 243, 1);
+	color : rgba(0, 0, 0, 0.5);
+	font : normal 18px/48px "SFUIDisplay-Bold", Arial, sans-serif;
+	transition : all 0.25s ease;
+	}
+		
+form > button.active {
+	background-color : rgba(254, 96, 129, 1);
+	color : rgba(255, 255, 255, 1);
+	cursor : pointer;
+	}
+
+form > button.active:hover {
+	background-color : rgba(252, 71, 110, 1);
+	}
+	
+@media (min-width: 961px) {
+	form > div > div {
+		width : 48%;
+		}
+	
+	form > div > div:last-child {
+		width : auto;
+		margin : 0 auto;
+		}
+	}
+
+@media (max-width: 960px) {
+	form > div {
+		max-width : 640px;
+		padding : 0 20px;
+		}
+
+	form > div > div {
+		width : 100%;
+		}
+
+	form > div > div > textarea {
+		top : -2px;
+		}
+	}

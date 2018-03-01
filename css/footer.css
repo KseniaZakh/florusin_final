@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(248, 232, 242, 1);
+}
+
+.footer_container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	color: rgba(43, 43, 43, 1);
+}
+
+footer p {
+	max-width : 560px;
+	margin: 0;
+}
+
+.footer_img {
+	position: absolute;
+	width: 280px;
+	transition : all 0.25s;
+}
+
+a.developer {
+		display : block;
+		z-index : 10;
+		width : 140px;
+		height : 36px;
+		margin : 2px 0;
+		background-image : url("../img/developer.svg?18092017");
+		background-position : 0% 0%;
+		background-repeat : no-repeat;
+		background-size : cover;
+		color : rgba(43, 43, 43, 0.5);
+}
+
+a.developer::after {
+		display : block;
+		position : absolute;
+		bottom : -3px;
+		left : 36px;
+		z-index : 10;
+		font : normal 12px/12px Arial, Tahoma, Verdana, sans-serif;
+		content : 'создание сайта';
+		color : rgba(43, 43, 43, 0.5);
+		white-space : nowrap;
+}
+
+@media only screen and (min-width: 1081px) {
+	.footer_img {
+ 		top : -110px;
+ 		right: 160px;
+	}
+	footer {
+		padding: 30px 40px;
+	}
+
+	a.developer {
+		position : absolute;
+		top : 0;
+		right : 0;
+	}
+}
+
+@media (min-width: 741px) and (max-width: 1080px) {
+	.footer_img {
+     	top : -170px;
+     	left: 55%;
+    }
+
+	a.developer {
+		position : absolute;
+		top : 0;
+		right : 0;
+}
+	footer {
+ 		padding: 70px 20px 20px 20px;
+	}
+}
+
+@media (max-width: 740px) {
+	.footer_img {
+		top : -170px;
+		right: 0;
+	}
+
+	footer {
+ 		padding: 70px 20px 20px 20px;
+	}
+
+	footer p {
+		padding-bottom: 50px;
+	}
+
+	a.developer {
+   		position : absolute;
+   		bottom : 0;
+   		left : 0;
+		transition : all 0.25s;
+ }
+
+}
+
+@media only screen and (min-width: 961px)  {
+	.footer_container {
+		font : normal 16px/20px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+}
+
+@media (max-width: 960px) {
+	.footer_container {
+		font : normal 14px/20px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+}

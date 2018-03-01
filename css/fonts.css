@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+    	font-family : "SFUIDisplay-Regular";
+    	src : url("../fonts/SFUIDisplay-Regular.eot");
+    	src : url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+    		url("../fonts/SFUIDisplay-Regular.woff") format("woff"),
+    		url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+   		font-style : normal;
+    	font-weight : normal;
+		}
+
+@font-face {
+		   font-family: "SFUIDisplay-Bold";
+		   src: url("../fonts/SFUIDisplay-Bold.eot");
+		   src: url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+		    	url("../fonts/SFUIDisplay-Bold.woff") format("woff"),
+		    	url("../fonts/SFUIDisplay-Bold.otf") format("opentype");
+		   	font-style: normal;
+		    font-weight: normal;
+			}
+
+@font-face {
+		font-family: "Constantia-Regular";
+		src: url("../fonts/constan.eot");
+		src: url("../fonts/constan.eot#iefix") format("embedded-opentype"),
+				url("../fonts/constan.woff") format("woff"),
+				url("../fonts/constan.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "Constantia-Bold";
+		src: url("../fonts/constanb.eot");
+		src: url("../fonts/constanb.eot#iefix") format("embedded-opentype"),
+				url("../fonts/constanb.woff") format("woff"),
+				url("../fonts/constanb.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "Font Awesome";
+		src: url("../fonts/fontawesome.eot");
+		src: url("../fonts/fontawesome.eot#iefix") format("embedded-opentype"),
+				url("../fonts/fontawesome.woff?20180802") format("woff"),
+				url("../fonts/fontawesome.woff2?20180802") format("woff2"),
+				url("../fonts/fontawesome.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}

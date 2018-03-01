@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+ol.contacts {
+	display: flex;
+	list-style: none;
+}
+
+
+ol.contacts > li {
+	position: relative;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+ol.contacts > li > span,
+div.card > h4 {
+	display: block;
+}
+
+div.card > h4 {
+	text-align: center;
+}
+
+
+ol.contacts > li::after {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 70px;
+	margin: auto;
+	background-repeat : no-repeat;
+	background-size : contain;
+	background-position: 50% 100%;
+}
+
+ol.contacts > li:first-child::after {
+	background-image : url("../img/phone.svg");
+}
+
+ol.contacts > li:nth-child(2)::after {
+	background-image : url("../img/address.svg");
+}
+
+ol.contacts > li:last-child::after {
+	background-image : url("../img/mail.svg");
+}
+
+ol.contacts > li {
+	padding-top: 100px;
+}
+
+ol.contacts > li::after {
+	left: calc(50% - 30px);
+}
+
+@media only screen and (min-width: 961px) {
+
+	ol.contacts > li > span {
+		font : normal 20px/30px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+
+	div.card > h4 {
+		font : normal 30px/30px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+}
+
+@media (min-width: 601px) {
+
+	ol.contacts {
+		width: 100%;
+		margin: 75px auto;
+	}
+
+	ol.contacts > li {
+		width: calc(100% / 3);
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	ol.contacts > li:not(:last-child) {
+		border-right: 1px solid rgba(254, 96, 129, 1);
+	}
+
+	ol.contacts > li::after {
+		top: 0;
+	}
+
+	ol.contacts > li > span.way {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+
+	ol.contacts > li > span {
+		font : normal 18px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+
+	div.card > h4 {
+		font : normal 24px/30px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+}
+
+@media (max-width: 600px) {
+
+	ol.contacts {
+		width: 80%;
+		margin: 30px auto;
+	}
+
+	ol.contacts {
+		flex-direction: column;
+	}
+
+	ol.contacts > li {
+		width: 100%;
+	}
+
+	ol.contacts > li > span {
+		font : normal 16px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+
+	ol.contacts > li::after {
+		top: 20px;
+	}
+
+	ol.contacts > li:not(:last-child) {
+		border-bottom: 1px solid rgba(254, 96, 129, 1);
+	}
+
+	div.card > h4 {
+		font : normal 20px/24px "SFUIDisplay-Regular", Arial, sans-serif;
+	}
+
+	ol.contacts > li > span.way {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}

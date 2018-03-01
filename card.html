@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
+    	<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+    	<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/article.css" />
+		<link rel="stylesheet" href="css/card.css" />
+		<link rel="stylesheet" href="css/form.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script defer src="js/jquery.js"></script>
+		<script defer src="js/base.js"></script>
+		<script defer src="js/card.js"></script>
+		<script defer src="js/form.js"></script>
+		<title>ФЛОРУСИН</title>
+	</head>
+	<body onload="resize();" onresize="resize();">
+		<div class="container">
+			<header>
+				<div class="header_container">
+					<a class="header_logo" href="main.html" title="На главную страницу"></a>
+					<a class="header_phone" href="tel:+74951234567" title="Позвоните нам">+7 495 123 45 67</a>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<a class="lang" href="#" title="English version">en</a>
+				</div>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="main.html" title="О компании">О компании</a></li>
+					<li><a href="catalogue.html" title="Каталог">Каталог</a></li>
+					<li><a href="contacts.html" title="Контакты">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<div class="brief">
+					<h1>Вкусные ароматы «Гурман»</h1>
+					<p>Парфюмерные композиции для геля, для ванны/душа</p>
+				</div>
+
+				<div class="card_photo">
+					<div>
+						<img src="./img/card_11.jpg" alt="Легендарный шоколад"/>
+					</div>
+					<div class="ul_wrap">
+						<ul class="gallery">
+							<li><img src="./img/card_12.jpg" alt="Молочный конфитюр"/></li>
+							<li class="selected"><img src="./img/card_11.jpg" alt="Легендарный шоколад"/></li>
+							<li><img src="./img/card_13.jpg" alt="Зефирный мишка"/></li>
+							<li><img src="./img/card_14.jpg" alt="Райские яблочки"/></li>
+							<!-- <li><img src="./img/card_16.jpg" alt="Кекс «Мадлен»"/></li> -->
+							<li><img src="./img/card_15.jpg" alt="Печенье «Макарон»"/></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="content">
+					<table>
+				  		<tr>
+				  			<td><strong>Молочный конфитюр</strong></td>
+				  			<td>Confiture de lait</td>
+				  			<td>CON00001</td>
+				  		</tr>
+				  		<tr>
+				  			<td><strong>Зефирный мишка</strong></td>
+				  			<td>Ourson guimauve</td>
+				  			<td>OUR00011</td>
+				  		</tr>
+				  		<tr>
+				  			<td><strong>Печенье «Макарон» Мята-шоколад</strong></td>
+				  			<td>Macaron menthe choco</td>
+				  			<td>EIG00001</td>
+				  		</tr>
+				  		<tr>
+				  			<td><strong>Легендарный шоколад</strong></td>
+				  			<td>Legendary chocolate</td>
+				  			<td>80743</td>
+				  		</tr>
+				  		<tr>
+				  			<td><strong>Райские яблочки</strong></td>
+				  			<td>Pomme d'amour</td>
+				  			<td>80447</td>
+				  		</tr>
+				  		<tr>
+				  			<td><strong>Кекс «Мадлен»</strong></td>
+				  			<td>Madeleine</td>
+				  			<td>80705E</td>
+				  		</tr>
+					</table>
+			  	</div>
+
+				<ul class="card_choiсe">
+					<li data-class="description">Описание</li>
+					<li data-class="price" class="selected">Прайс-лист</li>
+				</ul>
+
+				<div class="card description">
+					<h2>Полное описание коллекции</h2>
+					<p>При покупке геля  для душа аромат является вторым наиболее
+						важным критерием выбора продукта после его моющих свойств как
+						в европейских странах, так и в Америке. За исключением  Испании,
+						 потребители предпочитают парфюмированные гели. Для мужчин аромат
+						 является важным  фактором при покупке средств по уходу (Опрос мужской части
+						 интернет-пользователей возраста 16+).</p>
+					<p>Помимо непосредственного назначения и цены,
+						аромат  также является определяющим критерием при покупке
+						 средств гигиены. Производители учитывают эту тенденцию,
+						 придавая большое значение аромату продукта, качеству и его
+						 воздействию на  эмоции и обоняние  потребителя.</p>
+				</div>
+
+				<div class="card price">
+					<p>Оставьте ваши контактные данные и расскажите о вашем направлении
+						бизнеса, чтобы мы могли более точно сформировать для вас индивидуальное
+						 предложение.</p>
+					<form method="get" action="?action=price">
+						<div>
+							<div>
+								<ul>
+									<li class="required">
+										<input class="field" type="text" name="user_name" value="" />
+										<span>Ваше имя</span>
+									</li>
+									<li class="required">
+										<input class="field" type="text" name="user_email" value="" />
+										<span>Ваш email</span>
+									</li>
+									<li>
+										<input class="field" type="text" name="user_phone" value="" />
+										<span>Ваш телефон</span>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<textarea class="field" name="message"></textarea>
+								<span>Ваши пожелания</span>
+							</div>
+							<div class="required">
+								Я согласен(-на) на <a href="#" title="обработка персональных данных">обработку персональных данных</a>
+								<input type="checkbox" name="consent" value="" />
+								<span class="checkbox"></span>
+							</div>
+						</div>
+						<button type="button">Отправить</button>
+					</form>
+				</div>
+			</article>
+
+			<footer>
+				<div class="footer_container">
+					<p>2017 &copy; «Флорусин» – парфюмерные композиции и отдушки из Франции.
+					При копировании материалов прямая ссылка на источник обязательна
+					</p>
+					<a class="developer" href="http://www.tarantul.zone/" title="создание сайта" target="_blank">
+					</a>
+					<img class="footer_img" src="./img/aroma_footer.png" alt="aroma" />
+					</div>
+				</footer>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
+    	<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+    	<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/article.css" />
+		<link rel="stylesheet" href="css/form.css" />
+		<link rel="stylesheet" href="css/card.css" />
+		<link rel="stylesheet" href="css/contacts.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script defer src="js/jquery.js"></script>
+		<script defer src="js/base.js"></script>
+		<script defer src="js/form.js"></script>
+		<title>ФЛОРУСИН</title>
+	</head>
+
+	<body onload="resize();" onresize="resize();">
+		<div class="container">
+			<header>
+				<div class="header_container">
+					<a class="header_logo" href="main.html" title="На главную страницу"></a>
+					<a class="header_phone" href="tel:+74951234567" title="Позвоните нам">+7 495 123 45 67</a>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<a class="lang" href="#" title="English version">en</a>
+				</div>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="main.html" title="О компании">О компании</a></li>
+					<li><a href="catalogue.html" title="Каталог">Каталог</a></li>
+					<li><a href="contacts.html" title="Контакты">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<div class="brief">
+					<h1>Контактная информация</h1>
+					<p>С нами можно связаться следующими способами:</p>
+				</div>
+
+			<div class="content">
+				<ol class="contacts">
+					<li>
+						<span class="way"><strong>Телефоны</strong></span>
+						<span> +7 (494)648-82-34<br/> +7(909)690-92-91
+						</span>
+					</li>
+					<li>
+						<span class="way"><strong>Адрес</strong></span>
+						<span> г. Москва (г. Зеленоград),<br/> Проезд 4801,<br/> д. 7, строение 1
+						</span>
+					</li>
+					<li>
+						<span class="way"><strong>Электронная почта</strong></span>
+						<span>florusin@gmail.com
+						</span>
+					</li>
+				</ol>
+			</div>
+
+				<div class="card">
+					<h4>Свяжитесь с нами</h4>
+					<p>Оставьте ваши контактные даные, чтобы мы могли ответить на ваши вопросы.<br/>
+						По возможности, напишите немного о вашей компании, чтобы мы могли предметно
+						пообщаться.</p>
+						<form method="get" action="?action=price">
+							<div>
+								<div>
+									<ul>
+										<li class="required">
+											<input class="field" type="text" name="user_name" value="" />
+											<span>Ваше имя</span>
+										</li>
+										<li class="required">
+											<input class="field" type="text" name="user_email" value="" />
+											<span>Ваш email</span>
+										</li>
+										<li>
+											<input class="field" type="text" name="user_phone" value="" />
+											<span>Ваш телефон</span>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<textarea class="field" name="message"></textarea>
+									<span>Ваш вопрос или комментарий</span>
+								</div>
+								<div class="required">
+									Я согласен(-на) на <a href="#" title="обработка персональных данных">обработку персональных данных</a>
+									<input type="checkbox" name="consent" value="" />
+									<span class="checkbox"></span>
+								</div>
+							</div>
+							<button type="button">Отправить</button>
+						</form>
+				</div>
+			</article>
+
+			<footer>
+				<div class="footer_container">
+					<p>2017 &copy; «Флорусин» – парфюмерные композиции и отдушки из Франции.
+					При копировании материалов прямая ссылка на источник обязательна
+					</p>
+					<a class="developer" href="http://www.tarantul.zone/" title="создание сайта" target="_blank">
+					</a>
+					<img class="footer_img" src="./img/aroma_footer.png" alt="aroma" />
+					</div>
+				</footer>
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+ul.common {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+ul.common > li > a {
+	display: flex;
+	flex-direction: column;
+	color: inherit;
+}
+
+ul.common > li.pagination {
+	width: 100% !important;
+	margin-bottom: 0 !important;
+}
+
+li.pagination > ol > li > a {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+}
+
+li.pagination > ol > li.prev {
+	margin-right: 25px;
+}
+
+li.pagination > ol > li.next {
+	margin-left: 25px;
+}
+
+li.pagination > ol > li.prev > a:before {
+	content: "\F104";
+	font-family: "Font Awesome";
+	position: absolute;
+	color: rgba(254, 96, 129, 1);
+	text-align: center;
+	font-size: 24px;
+	width: 100%;
+	height: 100%;
+	transition : all 0.25s ease;
+}
+
+li.pagination > ol > li.next > a:before {
+	content: "\F105";
+	position: absolute;
+	font-family: "Font Awesome";
+	color: rgba(254, 96, 129, 1);
+	text-align: center;
+	font-size: 24px;
+	width: 100%;
+	height: 100%;
+	transition : all 0.25s ease;
+}
+
+li.pagination > ol > li.prev > a:after,
+li.pagination > ol > li.next > a:after {
+	content: "";
+	position: absolute;
+	background-color: rgba(254, 96, 129, 0.75);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transform : scale(0, 0);
+	transition : all 0.25s ease;
+}
+
+li.pagination > ol > li.prev:hover > a:after,
+li.pagination > ol > li.next:hover > a:after {
+	transform : scale(1, 1);
+}
+
+li.pagination > ol > li.prev:hover > a:before,
+li.pagination > ol > li.next:hover > a:before {
+	color: rgba(255, 255, 255, 1);
+	z-index: 3;
+}
+
+li.pagination > ol {
+	width: 280px;
+	margin: 10px auto;
+	padding: 0;
+	counter-reset: my-counter;
+}
+
+li.pagination > ol > li {
+	display: inline-block;
+	font: normal 18px/40px "SFUIDisplay-Regular", Arial, sans-serif;
+	width: 40px;
+	height: 40px;
+}
+
+li.pagination > ol > li:nth-child(2),
+li.pagination > ol > li:nth-child(3) {
+	margin-right: 5px;
+}
+
+li.pagination > ol > li.page > a:before {
+	content: counter(my-counter);
+	counter-increment: my-counter;
+	position: absolute;
+	font: normal 18px/40px "SFUIDisplay-Regular", Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition : all 0.25s ease;
+}
+
+li.pagination > ol > li.selected > a:before {
+		color: rgba(255, 255, 255, 1);
+		z-index: 3;
+}
+
+li.pagination > ol > li.page:not(.selected) > a:after {
+	content: "";
+	position: absolute;
+	background-color: rgba(254, 96, 129, 0.75);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-radius: 50%;
+	transform : scale(0, 0);
+	transition : all 0.25s ease;
+}
+
+li.pagination > ol > li.page:not(.selected):hover > a:after {
+	transform : scale(1, 1);
+}
+
+li.pagination > ol > li.page:hover > a:before {
+	color: rgba(255, 255, 255, 1);
+	z-index: 3;
+}
+
+li.pagination > ol > li.selected > a:after {
+	content: "";
+	position: absolute;
+	background-color: rgba(254, 96, 124, 1);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 961px) {
+
+	ul.common {
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+
+	ul.common > li {
+		width: calc((100% - 60px) / 3);
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+
+	ul.common {
+		padding-left: 20px;
+	}
+
+	ul.common > li {
+		width: calc((100% - 40px) / 2);
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	ul.common {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	ul.common > li {
+		width: 100%;
+	}
+}
