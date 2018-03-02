@@ -5,7 +5,6 @@ ol.contacts {
 	list-style: none;
 }
 
-
 ol.contacts > li {
 	position: relative;
 	text-align: center;
@@ -13,7 +12,8 @@ ol.contacts > li {
 }
 
 ol.contacts > li > span,
-div.card > h4 {
+div.card > h4,
+ol.contacts > li > a {
 	display: block;
 }
 
@@ -21,6 +21,10 @@ div.card > h4 {
 	text-align: center;
 }
 
+ol.contacts > li > a {
+	color: inherit;
+	text-decoration: none;
+}
 
 ol.contacts > li::after {
 	position: absolute;
@@ -61,7 +65,8 @@ div.map {
 
 @media only screen and (min-width: 961px) {
 
-	ol.contacts > li > span {
+	ol.contacts > li > span,
+	ol.contacts > li > a {
 		font : normal 20px/30px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
 
@@ -91,15 +96,16 @@ div.map {
 		top: 0;
 	}
 
-	ol.contacts > li > span.way {
+	/* ol.contacts > li > span.way {
 		margin-top: 30px;
 		margin-bottom: 30px;
-	}
+	} */
 }
 
 @media (min-width: 601px) and (max-width: 960px) {
 
-	ol.contacts > li > span {
+	ol.contacts > li > span,
+	ol.contacts > li > a {
 		font : normal 18px/24px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
 
@@ -129,7 +135,8 @@ div.map {
 		width: 100%;
 	}
 
-	ol.contacts > li > span {
+	ol.contacts > li > span,
+	ol.contacts > li > a {
 		font : normal 16px/24px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
 
@@ -145,10 +152,10 @@ div.map {
 		font : normal 20px/24px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
 
-	ol.contacts > li > span.way {
+	/* ol.contacts > li > span.way {
 		margin-top: 15px;
 		margin-bottom: 15px;
-	}
+	} */
 
 	div.map {
 		padding-left: 20px;
