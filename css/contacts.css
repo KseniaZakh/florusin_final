@@ -53,6 +53,12 @@ ol.contacts > li::after {
 	left: calc(50% - 30px);
 }
 
+div.map {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
 @media only screen and (min-width: 961px) {
 
 	ol.contacts > li > span {
@@ -100,6 +106,12 @@ ol.contacts > li::after {
 	div.card > h4 {
 		font : normal 24px/30px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
+
+	div.map {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -136,5 +148,11 @@ ol.contacts > li::after {
 	ol.contacts > li > span.way {
 		margin-top: 15px;
 		margin-bottom: 15px;
+	}
+
+	div.map {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
 	}
 }
