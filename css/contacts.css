@@ -95,11 +95,6 @@ div.map {
 	ol.contacts > li::after {
 		top: 0;
 	}
-
-	/* ol.contacts > li > span.way {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	} */
 }
 
 @media (min-width: 601px) and (max-width: 960px) {
@@ -151,11 +146,6 @@ div.map {
 	div.card > h4 {
 		font : normal 20px/24px "SFUIDisplay-Regular", Arial, sans-serif;
 	}
-
-	/* ol.contacts > li > span.way {
-		margin-top: 15px;
-		margin-bottom: 15px;
-	} */
 
 	div.map {
 		padding-left: 30px;
