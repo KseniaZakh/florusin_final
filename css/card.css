@@ -39,7 +39,7 @@ div.card_photo ul.gallery > li.selected {
 div.content > table {
 	display: block;
 	width: 100%;
-	max-width: 800px;
+	max-width: 900px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	counter-reset: my_counter;
@@ -114,7 +114,7 @@ article > ul.card_choiсe > li.selected::after {
 }
 
 div.card {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 

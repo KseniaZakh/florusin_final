@@ -19,7 +19,8 @@ ol.contacts > li > a {
 	display: block;
 }
 
-div.card > h4 {
+div.contacts > h4,
+div.contacts > p {
 	text-align: center;
 }
 
