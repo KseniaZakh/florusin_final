@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 div.swiper-main,
-div.swiper-main > ul,	
+div.swiper-main > ul,
 div.swiper-main > ul > li,
 div.swiper-main > ul > li > div,
 div.swiper-main > ul > li > div > span {
 	position : relative;
 	}
- 	
+
 div.swiper-main {
 	width : 100%;
 	background-color : rgba(248, 232, 242, 1);
 	overflow : hidden;
 	}
-	
+
 div.swiper-main > ul {
 	display : flex;
 	width : 2000em;
@@ -28,8 +28,12 @@ div.swiper-main > ul > li {
 	align-items : center;
 	width : 100vw;
 	min-height : 480px;
+	background-image: url("../img/slide1.jpg");
+	background-size: cover;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
 	}
-	
+
 div.swiper-main > ul > li.swiper-slide-active { z-index : 10; }
 
 div.swiper-main > ul > li > div {
@@ -42,7 +46,7 @@ div.swiper-main > ul > li > div > span {
 	padding : 20px 0;
 	margin : 20px 0;
 	}
-	
+
 div.swiper-main > ul > li > div > span::before {
 	display : block;
 	position : absolute;
@@ -53,7 +57,7 @@ div.swiper-main > ul > li > div > span::before {
 	background-color : rgba(0, 0, 0, 1);
 	content : "";
 	}
-	
+
 div.swiper-main > ul > li > div > a {
 	display : inline-block;
 	padding : 0 30px;
@@ -65,11 +69,11 @@ div.swiper-main > ul > li > div > a {
 	white-space : nowrap;
 	transition : all 0.25s ease;
 	}
-	
+
 div.swiper-main > ul > li > div > a:hover {
 	background-color : rgba(252, 71, 110, 1);
 	}
-	
+
 div.swiper-main > div {
 	position : absolute;
 	bottom : 0;
@@ -78,7 +82,7 @@ div.swiper-main > div {
 	width : 100%;
 	text-align : center;
 	}
-		
+
 div.swiper-main > div > span {
 	position : relative;
 	display : inline-block;
@@ -91,7 +95,7 @@ div.swiper-main > div > span {
     border : solid 1px rgba(254, 96, 129, 1);
     cursor : pointer;
     }
-    
+
 div.swiper-main > div > span.swiper-pagination-bullet-active::after {
 	position : absolute;
 	top : calc(50% - 5px);
@@ -102,52 +106,52 @@ div.swiper-main > div > span.swiper-pagination-bullet-active::after {
 	background-color : rgba(254, 96, 129, 1);
     content : "";
 	}
-	
+
 @media (min-width: 961px) {
-	div.swiper-main > ul > li {	
+	div.swiper-main > ul > li {
 		height : calc(100vh - 105px);
 		padding : 0 40px;
-		}
-		
+	}
+
 	div.swiper-main > ul > li > div {
 		margin : 0 auto;
 		padding : 0 0 0 320px;
-		}
-		
+	}
+
 	div.swiper-main > ul > li > div > h6 {
 		font : normal 54px/54px "Constantia-Regular", "Times New Roman", serif;
 		}
-		
+
 	div.swiper-main > ul > li > div > span {
 		font : normal 24px/30px "SFUIDisplay-Regular", "Times New Roman", serif;
 		}
 	}
-	
+
 @media (min-width: 541px) and (max-width: 960px) {
 	div.swiper-main > ul > li {
 		height : calc(100vh - 105px);
 		padding : 0 20px;
 		}
-		
+
 	div.swiper-main > ul > li > div > h6 {
 		font : normal 48px/48px "Constantia-Regular", "Times New Roman", serif;
 		}
-		
+
 	div.swiper-main > ul > li > div > span {
 		font : normal 22px/28px "SFUIDisplay-Regular", "Times New Roman", serif;
 		}
 	}
-	
+
 @media (max-width: 540px) {
 	div.swiper-main > ul > li {
 		height : calc(100vh - 125px);
 		padding : 0 20px;
 		}
-		
+
 	div.swiper-main > ul > li > div > h6 {
 		font : normal 36px/36px "Constantia-Regular", "Times New Roman", serif;
 		}
-		
+
 	div.swiper-main > ul > li > div > span {
 		font : normal 20px/26px "SFUIDisplay-Regular", "Times New Roman", serif;
 		}
