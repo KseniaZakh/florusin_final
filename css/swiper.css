@@ -27,7 +27,6 @@ div.swiper-main > ul > li {
 	display : flex;
 	align-items : center;
 	width : 100vw;
-	min-height : 480px;
 	background-image: url("../img/slide1.jpg");
 	background-size: cover;
 	background-position: 100% 100%;
@@ -110,6 +109,7 @@ div.swiper-main > div > span.swiper-pagination-bullet-active::after {
 @media (min-width: 961px) {
 	div.swiper-main > ul > li {
 		height : calc(100vh - 105px);
+		min-height: 520px;
 		padding : 0 40px;
 	}
 
@@ -130,6 +130,7 @@ div.swiper-main > div > span.swiper-pagination-bullet-active::after {
 @media (min-width: 541px) and (max-width: 960px) {
 	div.swiper-main > ul > li {
 		height : calc(100vh - 105px);
+		min-height: 480px;
 		padding : 0 20px;
 		}
 
