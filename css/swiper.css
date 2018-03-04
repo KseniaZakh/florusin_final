@@ -147,6 +147,7 @@ div.swiper-main > div > span.swiper-pagination-bullet-active::after {
 	div.swiper-main > ul > li {
 		height : calc(100vh - 125px);
 		padding : 0 20px;
+		min-height: 480px;
 		}
 
 	div.swiper-main > ul > li > div > h6 {
