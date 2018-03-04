@@ -81,6 +81,7 @@ li.pagination > ol > li.next:hover > a:before {
 }
 
 li.pagination > ol {
+	display: flex;
 	width: 280px;
 	margin: 10px auto;
 	padding: 0;
@@ -88,7 +89,7 @@ li.pagination > ol {
 }
 
 li.pagination > ol > li {
-	display: inline-block;
+	display: block;
 	font: normal 18px/40px "SFUIDisplay-Regular", Arial, sans-serif;
 	width: 40px;
 	height: 40px;
