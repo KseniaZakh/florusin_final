@@ -82,6 +82,7 @@ li.pagination > ol > li.next:hover > a:before {
 
 li.pagination > ol {
 	display: flex;
+	justify-content: center;
 	width: 280px;
 	margin: 10px auto;
 	padding: 0;
